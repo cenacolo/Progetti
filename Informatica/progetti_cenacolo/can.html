@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Il Sito è in Costruzione</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffaa00; /* Sfondo arancione */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      color: #fff;
+      position: relative;
+    }
+
+    #construction-container {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.8); /* Aumenta l'opacità dell'overlay */
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Aggiunge una leggera ombra per effetto tridimensionale */
+      position: relative;
+      z-index: 1; /* Imposta un indice di z per sovrapporre all'immagine di sfondo */
+    }
+
+    #construction-text {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge ombra al testo per migliorare la leggibilità */
+    }
+
+    #construction-crane {
+      max-width: 70%; /* Ridimensiona l'immagine */
+      height: auto;
+      animation: floatCrane 2s infinite;
+      margin-top: 20px; /* Aggiunge spazio sopra l'immagine */
+      border-radius: 8px; /* Aggiunge bordi arrotondati all'immagine */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Aggiunge una leggera ombra all'immagine */
+    }
+
+    @keyframes floatCrane {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px); /* Aumenta l'ampiezza del movimento */
+      }
+    }
+
+    #Cenacolo {
+      max-width: 5%; /* Ridimensiona l'immagine */
+      height: auto;
+      position: absolute;
+      top: 1%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 0; /* Imposta un indice di z inferiore per posizionare l'immagine di sfondo dietro il contenuto */
+    }
+  </style>
+</head>
+<body>
+  <img id="Cenacolo" src="img/c.jpg" alt="c-coin">
+  <div id="construction-container">
+    <div id="construction-text">
+      <p>Il Sito è Attualmente in Fase di Costruzione</p>
+    </div>
+    <img id="construction-crane" src="Gif-CANTIERE.gif" alt="Gif gru in movimento">
+  </div>
+</body>
+</html>
