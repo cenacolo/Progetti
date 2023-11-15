@@ -19,8 +19,6 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   position: relative;
   margin: auto;
 }
-
-/* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
@@ -30,6 +28,30 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+.riquadro {
+  max-width: 600px; /* Larghezza massima del riquadro */
+  width: 100%; /* Larghezza del riquadro in percentuale rispetto al contenitore genitore */
+  height: auto; /* Altezza automatica per mantenere l'aspetto proporzionale */
+  border: 2px solid #bbb;
+  overflow: hidden; /* Per nascondere parti delle immagini che potrebbero eccedere il riquadro */
+  display: flex;
+  flex-wrap: wrap;
+}
+.riquadro-content {
+  height: 200px; /* Altezza fissa per i tuoi div */
+  overflow-y: auto; /* Aggiungi uno scroll verticale se il contenuto è più lungo dell'altezza fissa */
+}
+
+
+.riquadro-content p {
+  text-align:left; /* Rimuovi il margine per evitare spazi aggiuntivi */
+}
+
+.riquadro img {
+  width: 100%; /* Per occupare l'intera larghezza del riquadro */
+  height: auto; /* Per mantenere l'aspetto proporzionale delle immagini */
+}
+
 </style>
 <body>
 
@@ -57,14 +79,14 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <div class="w3-panel">
     <h1><b>Cenacolo Enterprise</b></h1>
     <p>Template by IftechSolutions</p><div class="w3-xlarge w3-section">
+      <p>Seguici sui Social</p>
         <a href="https://www.instagram.com/cenacoloenterprise/">
         <i class="fa fa-instagram w3-hover-opacity"></i>
         </a>
       </div>
-  </div><span class="w3-white w3-padding-large w3-animate-bottom">Stampante 3D</span>
-
+  </div>
   <!-- Slideshow -->
-  <div class="slideshow-container">
+  <div class="slideshow-container riquadro riquadro img ">
 
     <div class="mySlides fade">
       <div class="numbertext">1 / 7</div>
@@ -118,24 +140,24 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   <!-- Grid -->
   <div class="w3-row w3-container">
     <div class="w3-center w3-padding-64">
-      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Cosa Offriamo</span>
+      <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Cosa Facciamo</span>
     </div>
-    <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-      <h3>Conoscenza</h3>
+    <div class="w3-col  w3-right-align l3 m6 w3-light-grey w3-container w3-padding-16 riquadro-content ">
+      <h3 class="w3-left-align">Divulgazione</h3>
       <p>Rendiamo la conoscenza disponibile a più persone tramite la Stampa 3D, elettrotecnica e informatica.</p>
     </div>
 
-    <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+    <div class="w3-col  l3 m6 w3-grey w3-container w3-padding-16 riquadro-content">
       <h3>Ispirazione</h3>
       <p>Ispiriamo le persone a credere nei loro sogni ed a realizzare quello che vogliono.</p>
     </div>
 
-    <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+    <div class="w3-col  l3 m6 w3-dark-grey w3-container w3-padding-16 riquadro-content">
       <h3>Consulenza</h3>
-      <p>Ci interfacciamo con il cliente per capire il loro bisogno e troviamo un modo per realizzarlo.</p>
+      <p>Grazie alla nostra esperienza maturata nel tempo tra successi e fallimenti possiamo aiutarti nel concepire il design e le personalizzazioni che vorresti avere nelle tue creazioni.</p>
     </div>
 
-    <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+    <div class="w3-col  l3 m6 w3-black w3-container w3-padding-16 riquadro-content">
       <h3>Prodotti</h3>
       <p>Realizziamo prodotti di alto livello se presi in carico per il sogno del cliente .</p>
     </div>

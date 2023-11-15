@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .riquadro {
+    width: 300px; /* Larghezza fissa */
+    height: 200px; /* Altezza fissa */
+    border: 2px solid #333;
+    overflow: hidden; /* Per nascondere parti delle immagini che potrebbero eccedere il riquadro */
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .riquadro img {
+    width: 100%; /* Per occupare l'intera larghezza del riquadro */
+    height: auto; /* Per mantenere l'aspetto proporzionale delle immagini */
+  }
+  

@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+    <body>
+        <div style="width:500px;margin-right:auto">
+            <form method="post" action="formmail.php" name="frm">
+                <input type="hidden" name="redirect" value="http://www.cenacoloenterprise.com">
+                <input type="hidden" name="require" value="e-mail,nome">
+                <input name="recipient" type="hidden" value="ocenacolo24@gmail.com">
+                <input name="subject" type="hidden" value="subject FormMail">
+                <fieldset>
+                    <table>
+                        <tr>
+                            <td><label for="name">Nome e cognome</label></td>
+                            <td><input name="name" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">E-mail</label></td>
+                            <td><input name="email" type="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="testo">Testo</label></td>
+                            <td><textarea id="testo" name="testo" rows="4" cols="50"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>Come ci ha conosciuti?</td>
+                            <td>
+                                <select size="1" name="listaDiscesa">
+                                    <option>internet</option>
+                                    <option>amici</option>
+                                    <option>giornali</option>
+                                    <option selected>seleziona</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="checkbox" name="contatto" value="si" checked>
+                                <font face="Arial" size="2">desidero essere ricontattato</font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td style="text-align:right"><button type="submit" >Invia</button></td> 
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
