@@ -30,6 +30,21 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
+.riquadro {
+  max-width: 600px; /* Larghezza massima del riquadro */
+  width: 100%; /* Larghezza del riquadro in percentuale rispetto al contenitore genitore */
+  height: auto; /* Altezza automatica per mantenere l'aspetto proporzionale */
+  border: 2px solid #bbb;
+  overflow: hidden; /* Per nascondere parti delle immagini che potrebbero eccedere il riquadro */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.riquadro img {
+  width: 100%; /* Per occupare l'intera larghezza del riquadro */
+  height: auto; /* Per mantenere l'aspetto proporzionale delle immagini */
+}
+
 </style>
 <body>
 
@@ -61,10 +76,9 @@ html,body,h1,h2,h3,h4 {font-family:"Lato", sans-serif}
         <i class="fa fa-instagram w3-hover-opacity"></i>
         </a>
       </div>
-  </div><span class="w3-white w3-padding-large w3-animate-bottom">Stampante 3D</span>
-
+  </div>
   <!-- Slideshow -->
-  <div class="slideshow-container">
+  <div class="slideshow-container riquadro riquadro img ">
 
     <div class="mySlides fade">
       <div class="numbertext">1 / 7</div>
