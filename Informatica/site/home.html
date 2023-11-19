@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="it">
   <head>
     <title>Cenacolo_Enterprise</title>
     <link rel="icon" type="image/x-icon" href="img/c-r.ico">
@@ -16,7 +16,17 @@
 </head>   
 
 <style>
-html,body,h1,h2,h4 {font-family:"Lato", sans-serif}
+  .logo{
+    max-width: 30%;
+    height: auto;
+    position: relative;
+    text-align: center;
+  }
+html,body,h1,h2,h4 {font-family:"Lato", sans-serif;}
+h1{
+  font-family:"Lato", sans-serif;
+font-size: 80px;
+}
 .tit1{
   color: black;
 }
@@ -41,11 +51,23 @@ html,body,h1,h2,h4 {font-family:"Lato", sans-serif}
 .mySlides {display:none}
 .w3-tag, .fa {cursor:pointer}
 .w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
+.testa{
+
+  bottom: 0;
+  right: 0;
+
+}
 /* Slideshow container */
 .slideshow-container {
-  max-width: 800px; 
+  max-height: 100%; 
   position: relative;
   margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
 }
 .slideshow-container img {
   width: 100%; /* Adatta l'immagine alla larghezza del contenitore */
@@ -66,43 +88,95 @@ html,body,h1,h2,h4 {font-family:"Lato", sans-serif}
 .riquadro-content p {
   text-align:left; /* Rimuovi il margine per evitare spazi aggiuntivi */
 }
+.bg-img {
+  /* The image used */
+  background-image: url("img/bambu.png");
+
+  min-height: 600px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.container {
+  position: absolute;
+  margin: 60px;
+  width: 80%;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+@media screen and (max-width: 600px) {
+      /* Modifica il layout per dispositivi con larghezza massima di 600px */
+      .topnav a {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+
 </style>
 <body>
-
+  <!-- per traduzione con APi di google-->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'it', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-large w3-light-grey">
-    <div class="w3-col s3">
-      <a href="#" class="w3-button w3-block">Home</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#plans" class="w3-button w3-block">Piani</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#about" class="w3-button w3-block">About</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#contact" class="w3-button w3-block">Contatti</a>
+<div class="bg-img">
+  <h1 class="w3-center tit3 ">
+    <img class="logo" src="img/cc-removebg-preview.png" alt="cenacoloenterprise">
+    <b>Cenacolo Enterprise</b>
+    <a href="https://www.instagram.com/cenacoloenterprise/">
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+    </a>
+  </h1>
+  <div class="container">
+    <div class="topnav">
+      <div class="w3-row w3-large w3-black">
+        
+        <div class="w3-col s3">
+          <a href="#" class="w3-button w3-block">Home</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#plans" class="w3-button w3-block">Piani</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#about" class="w3-button w3-block">About</a>
+        </div>
+        <div class="w3-col s3">
+          <a href="#contact" class="w3-button w3-block">Contatti</a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
-
-<!-- Content -->
-<div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px">
-
-  <div class="w3-panel">
-    <h1><b>Cenacolo Enterprise</b></h1>
-<p></p>
-    <br>
-
-      <div class="w3-right-align">
-        <p>Seguici sui Social</p>
-        <a href="https://www.instagram.com/cenacoloenterprise/">
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        </a>
-      </div>
-
-   </div>
 </div>
   <!-- Slideshow -->
   <div class="slideshow-container">
@@ -169,8 +243,6 @@ html,body,h1,h2,h4 {font-family:"Lato", sans-serif}
               modelli architettonici e gioielli.</li>
         <li class="w3-padding-16 riquadro-grid">Inoltre, offrono un servizio di stampa personalizzato,
             consentendo ai clienti di richiedere progetti specifici.</li>
-        <li class="w3-padding-16 riquadro-grid">Sono disponibili per ulteriori informazioni
-            e preventivi personalizzati per aiutare a realizzare le idee tramite la stampa 3D.</li>
             <li class="w3-light-grey w3-padding-24">
               <a href="https://www.thingiverse.com/omara24/designs">
                 <button style="font-size:24px">
@@ -187,7 +259,6 @@ html,body,h1,h2,h4 {font-family:"Lato", sans-serif}
         <li class="w3-padding-16 riquadro-grid">
             Benvenuti nella nostra pagina di <b>elettrotecnica</b>, dedicata a progetti elettronici con ESP32, Arduino e Raspberry Pi.</li>
         <li class="w3-padding-16 riquadro-grid"> Offriamo soluzioni e idee innovative per progetti pratici, con guide semplici.</li>
-        <li class="w3-padding-16 riquadro-grid">Esploriamo l'elettrotecnica dalla teoria alla pratica, aiutandovi a realizzare progetti con passione e creatività.</li>
         <li class="w3-padding-16 riquadro-grid">Condividiamo la nostra conoscenza e speriamo che la pagina sia il vostro punto di partenza nell'avventura dell'elettrotecnica.</li>
         <li class="w3-light-grey w3-padding-24">
           <a href="https://github.com/cenacolo/Progetti">
@@ -204,8 +275,6 @@ html,body,h1,h2,h4 {font-family:"Lato", sans-serif}
         <li class="w3-black w3-xlarge w3-padding-32">Informatica</li>
         <li class="w3-padding-16 riquadro-grid">Benvenuti nella parte inerente all'<b>informatica</b>, dedicata alla realizzazione di applicativi software per i vostri progetti.</li>
         <li class="w3-padding-16 riquadro-grid">La Cenacolo Enterprise offre soluzioni per le vostre idee innovative  dalla realizzazione di applicativi indipendenti alla realizzazione di software integrabile con hardware </li>
-        <li class="w3-padding-16 riquadro-grid">Esploriamo l'informatica dalla teoria alla pratica, aiutandovi a realizzare gli applicativi che desiderate
-           con passione e creatività.</li>
            <li class="w3-padding-16 riquadro-grid"><br>Tramite il nostro link Git hub potrete guardare i nostri progetti realizzati dalla creazione di applicativi 
             classici come web applications a software per il controllo di macchine <br>.</li>
         <li class="w3-light-grey w3-padding-24">
@@ -262,6 +331,7 @@ html,body,h1,h2,h4 {font-family:"Lato", sans-serif}
   <!-- Contact -->
   <div class="w3-center w3-padding-64" id="contact">
     <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contatti</span>
+    <p>Inviaci una email</p>
   </div>
 
   <form class="w3-container" action="/action_page.php" target="_blank">
@@ -289,9 +359,9 @@ html,body,h1,h2,h4 {font-family:"Lato", sans-serif}
 <!-- Footer -->
 
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <h4>Footer</h4>
   <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
+    <p> Seguici anche sui social</p>
     <a href="https://www.instagram.com/cenacoloenterprise/">
       <i class="fa fa-instagram w3-hover-opacity"></i>
     </a>
