@@ -1,199 +1,264 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <title>Cenacolo_Enterprise</title>
-    <link rel="icon" type="image/x-icon" href="img/c-r.ico">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-</head>   
+<head>
+  <title>Cenacolo_Enterprise</title>
+  <link rel="icon" type="image/x-icon" href="img/c-r.ico">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ22VMRX00"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PQ22VMRX00');
+  </script>
+</head>
 
 <style>
-  .logo{
+  .logo {
     max-width: 80%;
     height: auto;
     position: relative;
     text-align: center;
   }
-  html,body,h1,h2,h4 {font-family:"Lato", sans-serif;}
-h1{
-  font-family:"Lato", sans-serif;
-  font-size: 40px;
-}
-.tit1{
-  color: black;
-}
-.tit2{
-  color: black;
-}
-.tit3{
-  color: white;
-}
-.tit4{
-  color: white;
-}
-.tit5{
-  color: black;
-}
-.tit6{
-  color: white;
-}
-.tit7{
-  color: white;
-}
-.mySlides {display:none}
-.w3-tag, .fa {cursor:pointer}
-.w3-tag {height:15px;width:15px;padding:0;margin-top:6px}
-.testa{
 
-  bottom: 0;
-  right: 0;
+  html,
+  body,
+  h1,
+  h2,
+  h4 {
+    font-family: "Lato", sans-serif;
+  }
 
-}
-/* Slideshow container */
-.slideshow-container {
-  max-height: 100%; 
-  position: relative;
-  margin: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
-}
-.slideshow-container img {
-  width: 100%; /* Adatta l'immagine alla larghezza del contenitore */
-  height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni */
-}
-.riquadro-content {
-  height: 200px; /* Altezza fissa per i tuoi div */
-  overflow-y: auto; /* Aggiungi uno scroll verticale se il contenuto è più lungo dell'altezza fissa */
-}
-.riquadro-grid {
-  height: 100px; /* Altezza fissa per i tuoi div */
-  overflow-y: auto; /* Aggiungi uno scroll verticale se il contenuto è più lungo dell'altezza fissa */
-}
-.riquadro-contact {
-  height: 600px; /* Altezza fissa per i tuoi div */
-  overflow-y: auto; /* Aggiungi uno scroll verticale se il contenuto è più lungo dell'altezza fissa */
-}
-.riquadro-content p {
-  text-align:left; /* Rimuovi il margine per evitare spazi aggiuntivi */
-}
-.bg-img {
-  /* The image used */
-  background-image: url("img/bambu.png");
+  h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 40px;
+  }
 
-  min-height: 600px;
+  .tit1 {
+    color: black;
+  }
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-  /* Needed to position the navbar */
-  position: relative;
-}
+  .tit2 {
+    color: black;
+  }
 
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 60px;
-  width: 80%;
-}
+  .tit3 {
+    color: white;
+  }
 
-/* The navbar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+  .tit4 {
+    color: white;
+  }
 
-/* Navbar links */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 12px;
-}
-.faq-container {
-      max-width: 100%;
-      margin: 0 auto;
+  .tit5 {
+    color: black;
+  }
+
+  .tit6 {
+    color: white;
+  }
+
+  .tit7 {
+    color: white;
+  }
+
+  .mySlides {
+    display: none
+  }
+
+  .w3-tag,
+  .fa {
+    cursor: pointer
+  }
+
+  .w3-tag {
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    margin-top: 6px
+  }
+
+  .testa {
+
+    bottom: 0;
+    right: 0;
+
+  }
+
+  /* Slideshow container */
+  .slideshow-container {
+    max-height: 100%;
+    position: relative;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+  }
+
+  .slideshow-container img {
+    width: 100%;
+    /* Adatta l'immagine alla larghezza del contenitore */
+    height: auto;
+    /* Imposta l'altezza automaticamente per mantenere le proporzioni */
+  }
+
+  .riquadro-content {
+    height: 200px;
+    /* Altezza fissa per i tuoi div */
+    overflow-y: auto;
+    /* Aggiungi uno scroll verticale se il contenuto è più lungo dell'altezza fissa */
+  }
+
+  .riquadro-grid {
+    height: 100px;
+    /* Altezza fissa per i tuoi div */
+    overflow-y: auto;
+    /* Aggiungi uno scroll verticale se il contenuto è più lungo dell'altezza fissa */
+  }
+
+  .riquadro-contact {
+    height: 600px;
+    /* Altezza fissa per i tuoi div */
+    overflow-y: auto;
+    /* Aggiungi uno scroll verticale se il contenuto è più lungo dell'altezza fissa */
+  }
+
+  .riquadro-content p {
+    text-align: left;
+    /* Rimuovi il margine per evitare spazi aggiuntivi */
+  }
+
+  .bg-img {
+    /* The image used */
+    background-image: url("img/bambu.png");
+
+    min-height: 600px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Needed to position the navbar */
+    position: relative;
+  }
+
+  /* Position the navbar container inside the image */
+  .container {
+    position: absolute;
+    margin: 60px;
+    width: 80%;
+  }
+
+  /* The navbar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  /* Navbar links */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .faq-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    margin-bottom: 20px;
+  }
+
+  .question {
+    font-weight: bold;
+    cursor: pointer;
+    color: #007bff;
+  }
+
+  .answer {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  @media screen and (max-width: 600px) {
+
+    /* Modifica il layout per dispositivi con larghezza massima di 600px */
+    .topnav a {
+      float: none;
+      width: 100%;
+      text-align: center;
     }
-    .faq-item {
-      margin-bottom: 20px;
-    }
-    .question {
-      font-weight: bold;
-      cursor: pointer;
-      color: #007bff;
-    }
-    .answer {
-      display: none;
-      margin-top: 10px;
-    }
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-@media screen and (max-width: 600px) {
-      /* Modifica il layout per dispositivi con larghezza massima di 600px */
-      .topnav a {
-        float: none;
-        width: 100%;
-        text-align: center;
-      }
-    }
-
+  }
 </style>
+
 <body>
   <!-- per traduzione con APi di google-->
-<div id="google_translate_element"></div>
-<script type="text/javascript">
+
+  <div id="google_translate_element"></div>
+
+  <script type="text/javascript">
   function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'it', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    new google.translate.TranslateElement({pageLanguage: 'it'}, 'google_translate_element');
   }
   </script>
+  
   <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!-- Links (sit on top) -->
-<div class="bg-img">
-  <h1 class="w3-center tit2 ">
-    <img class="logo" src="img/scritta-removebg-preview.png" alt="cenacoloenterprise">
-    <a href="https://www.instagram.com/cenacoloenterprise/">
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-    </a>
-  </h1>
-  <div class="container">
-    <div class="topnav">
-      <div class="w3-row w3-large w3-black">
-        <div class="w3-col s2">
-          <a href="#" class="w3-button w3-block">Home</a>
-        </div>
-        <div class="w3-col s2">
-          <a href="#plans" class="w3-button w3-block">Piani</a>
-        </div>
-        <div class="w3-col s3">
-          <a href="#chisiamo" class="w3-button w3-block">chi Siamo</a>
-        </div>
-        <div class="w3-col s2">
-          <a href="#faq" class="w3-button w3-block">FAQ</a>
-        </div>
-        <div class="w3-col s3">
-          <a href="#contact" class="w3-button w3-block">Contatti</a>
+  <!-- Links (sit on top) -->
+  <div class="bg-img">
+    <h1 class="w3-center tit2 ">
+      <img class="logo" src="img/scritta-removebg-preview.png" alt="cenacoloenterprise">
+      <a href="https://www.instagram.com/cenacoloenterprise/">
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+      </a>
+    </h1>
+    <div class="container">
+      <div class="topnav">
+        <div class="w3-row w3-large w3-black">
+          <div class="w3-col s2">
+            <a href="#" class="w3-button w3-block">Home</a>
+          </div>
+          <div class="w3-col s2">
+            <a href="#plans" class="w3-button w3-block">Piani</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#chisiamo" class="w3-button w3-block">chi Siamo</a>
+          </div>
+          <div class="w3-col s2">
+            <a href="#faq" class="w3-button w3-block">FAQ</a>
+          </div>
+          <div class="w3-col s3">
+            <a href="#contact" class="w3-button w3-block">Contatti</a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
   <!-- Slideshow -->
   <div class="slideshow-container">
     <div class="slider">
@@ -213,38 +278,42 @@ h1{
       <img src="img/dentroscaf.jpeg">
     </div>
   </div>
-    <!-- Grid -->
+  <!-- Grid -->
   <div class="w3-row w3-container">
     <div class="w3-center w3-padding-24">
       <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Cosa Facciamo</span>
     </div>
     <div class="w3-col  w3-right-align l3 m6 w3-light-grey w3-container w3-padding-16 riquadro-content ">
       <div class="tit1">
-             <h3 class="w3-left-align">Divulgazione</h3> 
+        <h3 class="w3-left-align">Divulgazione</h3>
       </div>
-      <p>Sebbene il settore della stampa 3d è in evoluzione già da molti anni non tutti conoscono le potenzialità che questa tecnologia può offrire... a farvi scoprire questo mondo ci pensiamo noi!</p>
+      <p>Sebbene il settore della stampa 3d è in evoluzione già da molti anni non tutti conoscono le potenzialità che
+        questa tecnologia può offrire... a farvi scoprire questo mondo ci pensiamo noi!</p>
     </div>
 
     <div class="w3-col  l3 m6 w3-grey w3-container w3-padding-16 riquadro-content">
-      
+
       <div class="tit2">
-        <h3 class="w3-left-align">Ispirazione</h3> 
- </div>
-      <p>Come noi siamo stati ispirati dall'idea di poter concepire e successivamente realizzare oggetti personalizzati tutti nostri, ora cerchiamo di ispirare sempre più persone nel fare lo stesso.</p>
+        <h3 class="w3-left-align">Ispirazione</h3>
+      </div>
+      <p>Come noi siamo stati ispirati dall'idea di poter concepire e successivamente realizzare oggetti personalizzati
+        tutti nostri, ora cerchiamo di ispirare sempre più persone nel fare lo stesso.</p>
     </div>
 
     <div class="w3-col  l3 m6 w3-dark-grey w3-container w3-padding-16 riquadro-content">
       <div class="tit3">
-        <h3 class="w3-left-align">Conoscenza</h3> 
- </div>
-      <p>Grazie alla nostra esperienza maturata nel tempo tra successi e fallimenti possiamo aiutarti nel concepire il design e le personalizzazioni che vorresti avere nelle tue creazioni.</p>
+        <h3 class="w3-left-align">Conoscenza</h3>
+      </div>
+      <p>Grazie alla nostra esperienza maturata nel tempo tra successi e fallimenti possiamo aiutarti nel concepire il
+        design e le personalizzazioni che vorresti avere nelle tue creazioni.</p>
     </div>
 
     <div class="w3-col  l3 m6 w3-black w3-container w3-padding-16 riquadro-content">
       <div class="tit4">
-        <h3 class="w3-left-align">Prodotti</h3> 
- </div>
-      <p>Ovviamente non ci limitiamo a modellare insieme a te i tuoi progetti digitali ma li portiamo nel mondo reale tramite la stampa 3D</p>
+        <h3 class="w3-left-align">Prodotti</h3>
+      </div>
+      <p>Ovviamente non ci limitiamo a modellare insieme a te i tuoi progetti digitali ma li portiamo nel mondo reale
+        tramite la stampa 3D</p>
     </div>
   </div>
 
@@ -252,32 +321,35 @@ h1{
   <div class="w3-row-padding" id="plans">
     <div class="w3-center w3-padding-64">
       <h3>I nostri piani - non solo stampa 3d! </h3>
-      <p>puoi combinare i tuoi progetti con le nostre competenze in ambito informatico ed elettrotecnico per creare oggetti unici</p>
+      <p>puoi combinare i tuoi progetti con le nostre competenze in ambito informatico ed elettrotecnico per creare
+        oggetti unici</p>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
         <li class="w3-light-grey w3-xlarge w3-padding-32 ">Stampante3D</li>
-        <li class="w3-padding-16 riquadro-grid "> La parte dedicata al sito web della <b>stampante 3D</b> offre informazioni sulla versatilità di
-           questa tecnologia.</li>
-        <li class="w3-padding-16 riquadro-grid"> La stampante 3D permette di creare oggetti di varie forme e dimensioni da file digitali,
-            rendendo possibile la produzione di oggetti complessi. Non ci sono limiti alla creatività,
-             con la possibilità di stampare oggetti di diversi tipi, dal quotidiano alle parti di ricambio per veicoli,
-              modelli architettonici e gioielli.</li>
+        <li class="w3-padding-16 riquadro-grid "> La parte dedicata al sito web della <b>stampante 3D</b> offre
+          informazioni sulla versatilità di
+          questa tecnologia.</li>
+        <li class="w3-padding-16 riquadro-grid"> La stampante 3D permette di creare oggetti di varie forme e dimensioni
+          da file digitali,
+          rendendo possibile la produzione di oggetti complessi. Non ci sono limiti alla creatività,
+          con la possibilità di stampare oggetti di diversi tipi, dal quotidiano alle parti di ricambio per veicoli,
+          modelli architettonici e gioielli.</li>
         <li class="w3-padding-16 riquadro-grid">Inoltre, offriamo un servizio di stampa personalizzato,
-            consentendo ai clienti di richiedere progetti specifici.</li>
-            <li class="w3-light-grey w3-padding-24">
-              <a href="https://www.thingiverse.com/omara24/designs">
-                <button style="font-size:24px">
-                  Button <img src="img/download.ico" alt="Icon" width="24" height="24">
-                </button>
-              </a>
-              <a href="https://cults3d.com/en/users/ocenacolo/3d-models">
-                <button style="font-size:24px">
-                  Button <img src="img/3dcults.ico" alt="Icon" width="24" height="24">
-                </button>
-              </a>
-            </li>
+          consentendo ai clienti di richiedere progetti specifici.</li>
+        <li class="w3-light-grey w3-padding-24">
+          <a href="https://www.thingiverse.com/omara24/designs">
+            <button style="font-size:24px">
+               <img src="img/download.ico" alt="Icon" width="24" height="24">
+            </button>
+          </a>
+          <a href="https://cults3d.com/en/users/ocenacolo/3d-models">
+            <button style="font-size:24px">
+               <img src="img/3dcults.ico" alt="Icon" width="24" height="24">
+            </button>
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -285,32 +357,38 @@ h1{
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
         <li class="w3-dark-grey w3-xlarge w3-padding-32">Elettrotecnica</li>
         <li class="w3-padding-16 riquadro-grid">
-            Benvenuti nella nostra pagina di <b>elettrotecnica</b>, dedicata a progetti elettronici con ESP32, Arduino e Raspberry Pi.</li>
-        <li class="w3-padding-16 riquadro-grid"> Offriamo soluzioni e idee innovative per progetti pratici, con guide semplici.</li>
-        <li class="w3-padding-16 riquadro-grid">Condividiamo la nostra conoscenza e speriamo che la pagina sia il vostro punto di partenza nell'avventura dell'elettrotecnica.</li>
+          Benvenuti nella nostra pagina di <b>elettrotecnica</b>, dedicata a progetti elettronici con ESP32, Arduino e
+          Raspberry Pi.</li>
+        <li class="w3-padding-16 riquadro-grid"> Offriamo soluzioni e idee innovative per progetti pratici, con guide
+          semplici.</li>
+        <li class="w3-padding-16 riquadro-grid">Condividiamo la nostra conoscenza e speriamo che la pagina sia il vostro
+          punto di partenza nell'avventura dell'elettrotecnica.</li>
         <li class="w3-light-grey w3-padding-24">
           <a href="https://github.com/cenacolo/Progetti">
-              <button style='font-size:24px'>
-                Button <i class='fa fa-github'></i>
-              </button>
-            </a>
-      </li>
+            <button style='font-size:24px'>
+               <i class='fa fa-github'></i>
+            </button>
+          </a>
+        </li>
       </ul>
     </div>
 
     <div class="w3-third w3-margin-bottom">
       <ul class="w3-ul w3-border w3-center w3-hover-shadow">
         <li class="w3-black w3-xlarge w3-padding-32">Informatica</li>
-        <li class="w3-padding-16 riquadro-grid">Benvenuti nella parte inerente all'<b>informatica</b>, dedicata alla realizzazione di applicativi software per i vostri progetti.</li>
-        <li class="w3-padding-16 riquadro-grid">La Cenacolo Enterprise offre soluzioni per le vostre idee innovative  dalla realizzazione di applicativi indipendenti alla realizzazione di software integrabile con hardware </li>
-           <li class="w3-padding-16 riquadro-grid"><br>Tramite il nostro link Git hub potrete guardare i nostri progetti realizzati dalla creazione di applicativi 
-            classici come web applications a software per il controllo di macchine <br>.</li>
+        <li class="w3-padding-16 riquadro-grid">Benvenuti nella parte inerente all'<b>informatica</b>, dedicata alla
+          realizzazione di applicativi software per i vostri progetti.</li>
+        <li class="w3-padding-16 riquadro-grid">La Cenacolo Enterprise offre soluzioni per le vostre idee innovative
+          dalla realizzazione di applicativi indipendenti alla realizzazione di software integrabile con hardware </li>
+        <li class="w3-padding-16 riquadro-grid"><br>Tramite il nostro link Git hub potrete guardare i nostri progetti
+          realizzati dalla creazione di applicativi
+          classici come web applications a software per il controllo di macchine <br>.</li>
         <li class="w3-light-grey w3-padding-24">
-            <a href="https://github.com/cenacolo/Progetti/tree/main/Informatica">
-                <button style='font-size:24px'>
-                  Button <i class='fa fa-github'></i>
-                </button>
-              </a>
+          <a href="https://github.com/cenacolo/Progetti/tree/main/Informatica">
+            <button style='font-size:24px'>
+               <i class='fa fa-github'></i>
+            </button>
+          </a>
         </li>
       </ul>
     </div>
@@ -327,14 +405,20 @@ h1{
         <img src="img_personali/nico.jpeg" alt="Nicolò" style="width:100%">
         <div class="w3-container ">
           <h3>Nicolò Trevisanutto</h3>
-          <p>Salve, sono<b>l'ideatore</b> della Cenacolo Enterprise. Con una formazione di perito <b>elettrotecnico</b>, 
-            ho sempre avuto la passione di creare progetti innovativi e ho trovato nella stampa 3D un modo pratico e veloce per realizzarli.
-            La mia missione è tradurre <b>idee creative in prodotti tangibili</b>che non solo soddisfino le esigenze della community , 
+          <p>Salve, sono<b>l'ideatore</b> della Cenacolo Enterprise. Con una formazione di perito <b>elettrotecnico</b>,
+            ho sempre avuto la passione di creare progetti innovativi e ho trovato nella stampa 3D un modo pratico e
+            veloce per realizzarli.
+            La mia missione è tradurre <b>idee creative in prodotti tangibili</b>che non solo soddisfino le esigenze
+            della community ,
             ma che abbiano un impatto positivo sulla vita delle persone.
-            Sono guidato dalla gioia di contribuire al benessere della società attraverso soluzioni elettroniche all'avanguardia.
-             La mia <b>esperienza</b> nel campo dell'elettrotecnica mi ha permesso di affrontare sfide complesse con determinazione e creatività.
-            In Cenacolo Enterprise, siamo una squadra appassionata di professionisti dedicati a portare avanti l'eredità di innovazione e qualità.
-              Siamo felici di mettere le nostre abilità al servizio degli altri, fornendo soluzioni che migliorino la vita quotidiana e promuovano la crescita sostenibile.</p>
+            Sono guidato dalla gioia di contribuire al benessere della società attraverso soluzioni elettroniche
+            all'avanguardia.
+            La mia <b>esperienza</b> nel campo dell'elettrotecnica mi ha permesso di affrontare sfide complesse con
+            determinazione e creatività.
+            In Cenacolo Enterprise, siamo una squadra appassionata di professionisti dedicati a portare avanti l'eredità
+            di innovazione e qualità.
+            Siamo felici di mettere le nostre abilità al servizio degli altri, fornendo soluzioni che migliorino la vita
+            quotidiana e promuovano la crescita sostenibile.</p>
         </div>
       </div>
     </div>
@@ -344,14 +428,21 @@ h1{
         <img src="img_personali/matteo.jpg" alt="Matteo" style="width:100%">
         <div class="w3-container">
           <h3>Matteo Marziano</h3>
-          <p>Ciao sono il <b>co-ideatore</b> e custode della gestione amministrativa ed economica della nostra azienda. 
-            Con una solida formazione come perito <b>informatico</b>, la mia passione per l'informatica si traduce in una dedizione totale alla realizzazione di progetti ambiziosi e sfidanti.
-            Il mio ruolo in Cenacolo va oltre la gestione finanziaria; sono il braccio destro nella definizione di strategie che guidano la nostra crescita sostenibile.
-             Sono orgoglioso di contribuire alla costruzione di un ambiente lavorativo solido, dove la creatività e l'innovazione convergono con l'efficienza aziendale.
-            La mia missione è trasformare le <b>sfide dell'informatica in opportunità di successo</b>. Con uno sguardo sempre rivolto al futuro,
-             cerco di implementare soluzioni tecnologiche avanzate che migliorino la nostra efficienza interna e offrano prodotti all'avanguardia ai nostri clienti.
-            In qualità di co-ideatore, credo fermamente nella forza della collaborazione e della diversità di competenze.
-             Insieme al nostro team di professionisti appassionati, lavoriamo instancabilmente per superare gli ostacoli e creare un impatto positivo duraturo nel mondo dell'informatica.
+          <p>Ciao sono il <b>co-ideatore</b> e custode della gestione amministrativa ed economica della nostra azienda.
+            Con una solida formazione come perito <b>informatico</b>, la mia passione per l'informatica si traduce in
+            una dedizione totale alla realizzazione di progetti ambiziosi e sfidanti.
+            Il mio ruolo in Cenacolo va oltre la gestione finanziaria; sono il braccio destro nella definizione di
+            strategie che guidano la nostra crescita sostenibile.
+            Sono orgoglioso di contribuire alla costruzione di un ambiente lavorativo solido, dove la creatività e
+            l'innovazione convergono con l'efficienza aziendale.
+            La mia missione è trasformare le <b>sfide dell'informatica in opportunità di successo</b>. Con uno sguardo
+            sempre rivolto al futuro,
+            cerco di implementare soluzioni tecnologiche avanzate che migliorino la nostra efficienza interna e offrano
+            prodotti all'avanguardia ai nostri clienti.
+            In qualità di co-ideatore, credo fermamente nella forza della collaborazione e della diversità di
+            competenze.
+            Insieme al nostro team di professionisti appassionati, lavoriamo instancabilmente per superare gli ostacoli
+            e creare un impatto positivo duraturo nel mondo dell'informatica.
         </div>
       </div>
     </div>
@@ -361,15 +452,21 @@ h1{
         <img src="img_personali/serre.jpeg" alt="Gianluca" style="width:100%">
         <div class="w3-container">
           <h3>Gianluca Serrentino</h3>
-          <p>Ciao!! sono il cuore pulsante dell'area <b>marketing</b> di Cenacolo Enterprise, dedicato a connetterci con clienti come voi, che condividono il desiderio di dare vita a progetti tecnologici straordinari.
-            Nel mio ruolo di responsabile marketing, la mia missione è <b>trasformare idee innovative in opportunità concrete</b>. 
-            Amo il dinamismo del mondo tecnologico e credo fermamente nella potenza delle storie che raccontiamo attraverso la nostra azienda.
-             Sono qui per guidarvi attraverso il nostro universo creativo e presentarvi le soluzioni che rendono tangibili i vostri sogni tecnologici.
-            La passione per il marketing si fonde con la mia curiosità per le nuove tecnologie, 
-            consentendomi di creare strategie che non solo raggiungono il cuore dei nostri clienti, 
-            ma che li ispirano a intraprendere nuove avventure digitali con noi. Il vostro desiderio di progetti tecnologici diventa il nostro motore,
-             spingendoci a superare i confini dell'innovazione.
-            In Cenacolo Enterprise, vediamo il marketing come un ponte che collega le vostre aspirazioni ai nostri prodotti e servizi di alta qualità.</p>
+          <p>Ciao!! sono il cuore pulsante dell'area <b>marketing</b> di Cenacolo Enterprise, dedicato a connetterci con
+            clienti come voi, che condividono il desiderio di dare vita a progetti tecnologici straordinari.
+            Nel mio ruolo di responsabile marketing, la mia missione è <b>trasformare idee innovative in opportunità
+              concrete</b>.
+            Amo il dinamismo del mondo tecnologico e credo fermamente nella potenza delle storie che raccontiamo
+            attraverso la nostra azienda.
+            Sono qui per guidarvi attraverso il nostro universo creativo e presentarvi le soluzioni che rendono
+            tangibili i vostri sogni tecnologici.
+            La passione per il marketing si fonde con la mia curiosità per le nuove tecnologie,
+            consentendomi di creare strategie che non solo raggiungono il cuore dei nostri clienti,
+            ma che li ispirano a intraprendere nuove avventure digitali con noi. Il vostro desiderio di progetti
+            tecnologici diventa il nostro motore,
+            spingendoci a superare i confini dell'innovazione.
+            In Cenacolo Enterprise, vediamo il marketing come un ponte che collega le vostre aspirazioni ai nostri
+            prodotti e servizi di alta qualità.</p>
         </div>
       </div>
     </div>
@@ -379,33 +476,91 @@ h1{
 
     <div class="faq-container">
       <h2>Domande Frequenti</h2>
-    
+
       <div class="faq-item">
         <div class="question" onclick="toggleAnswer(1)">Perché Cenacolo?</div>
-        <div class=" w3-container answer " id="answer1"> La parola <b>cenacolo</b> ha origini italiane e viene utilizzata per indicare un luogo dedicato al convivio,
-           in particolare per riferirsi a un pranzo o una cena tra amici o membri di una comunità. Tuttavia,
-            Il termine "cenacolo" può evocare sia il <b>concetto generale di convivialità e condivisione di un pasto o di un idea</b>
-           sia un riferimento più specifico all'evento biblico dell'Ultima Cena.
-          Nella nostra storia il cenacolo è iniziato come luogo di raduno tra amici per condividere passioni e storie comuni.
-          Con il passare del tempo, il cenacolo ormai divenuto famoso per i suoi racconti e storie, divenne il cuore di questa nuova storia, un nuovo inizio.
-          Come diventerà il cenacolo nel futuro non lo sappiamo ma sarà grazie a <b>voi</b>, che potremo condividere nuove storie. </div>
+        <div class=" w3-container answer " id="answer1"> La parola <b>cenacolo</b> ha origini italiane e viene
+          utilizzata per indicare un luogo dedicato al convivio,
+          in particolare per riferirsi a un pranzo o una cena tra amici o membri di una comunità. Tuttavia,
+          Il termine "cenacolo" può evocare sia il <b>concetto generale di convivialità e condivisione di un pasto o di
+          un idea</b>
+          sia un riferimento più specifico all'evento biblico dell'Ultima Cena.
+          Nella nostra storia il cenacolo è iniziato come luogo di raduno tra amici per condividere passioni e storie
+          comuni.
+          Con il passare del tempo, il cenacolo ormai divenuto famoso per i suoi racconti e storie, divenne il cuore di
+          questa nuova storia, un nuovo inizio.
+          Come diventerà il cenacolo nel futuro non lo sappiamo ma sarà grazie a <b>voi</b>, che potremo condividere
+          nuove storie. 
+        </div>
+        <div class="question" onclick="toggleAnswer(2)">Di che materiale sono fatte le stampe?</div>
+        <div class=" w3-container answer " id="answer2"> Le stampe che siamo in grado di realizzare sono principalmente
+          fatte di PLA ed in altri materiali come ASA, PETG, ABS e TPU.<br>
+          <div class="question" onclick="toggleAnswer(3)">PLA</div>
+          <div class=" w3-container answer " id="answer3">
+            Il PLA è un materiale termoplastico biodegradabile e biocompatibile che viene comunemente utilizzato come
+            filamento nelle stampanti 3D.
+            <br>1) <b>Sostenibilità ambientale</b>: Il PLA è derivato da fonti rinnovabili come mais o canna da zucchero,
+            il che lo rende una scelta più sostenibile rispetto ad alcuni altri materiali plastici.
+            <br>2) <b>Facilità di stampa</b>: Ha una temperatura di lavorazione relativamente bassa il che riduce i tempi
+            aumentando la velocità, rendendolo adatto a molte stampanti 3D
+            desktop. Inoltre, ha una bassa tendenza a deformarsi durante il raffreddamento, il che facilita la
+            creazione di pezzi più precisi.
+          </div>
+          <div class="question" onclick="toggleAnswer(4)">ASA</div>
+          <div class=" w3-container answer " id="answer4">
+            L'ASA è un materiale noto per la sua combinazione unica di durabilità e resistenza agli agenti atmosferici.
+            Questo tipo di materiale offre diverse proprietà che lo rendono una scelta eccellente per diverse applicazioni
+            specialmente per la produzione di componenti per esterni e sottoposti a sollecitazioni meccaniche.
+          </div>
+
+
+          <div class="question" onclick="toggleAnswer(5)">PETG</div>
+          <div class=" w3-container answer " id="answer5">
+            Il PETG è un materiale avanzato. Questo termopolimero offre una combinazione unica di robustezza e
+            trasparenza. In generale, la scelta tra PLA e PETG dipende dalle specifiche esigenze del tuo progetto. Il PLA
+            è ottimo per stampe più dettagliate e meno soggette a sollecitazioni meccaniche, mentre il PETG è preferibile
+            quando si richiede una maggiore robustezza e flessibilità.
+          </div>
+
+          <div class="question" onclick="toggleAnswer(6)">ABS</div>
+          <div class=" w3-container answer " id="answer6">
+            L'ABS è un materiale con una combinazione unica di resistenza, duttilità e facilità di lavorazione. La sua
+            elevata resistenza lo rende ideale per la produzione di componenti che vengono sottoposti ad una maggiore
+            tensione meccanica e una esposizione a prodotti chimici.
+          </div>
+          <div class="question" onclick="toggleAnswer(7)">TPU</div>
+          <div class=" w3-container answer " id="answer7">
+            Il TPU è un materiale dotato di eccezionali proprietà elastiche e resistenza agli agenti atmosferici,il che lo
+            rende una scelta ideale per la creazione di oggetti flessibili, in grado di piegarsi e deformarsi ma
+            ritornando alla loro forma iniziale.
+          </div>
+        </div>
+        <div class="question" onclick="toggleAnswer(8)">Di che dimensioni sono le stampe?</div>
+        <div class=" w3-container answer " id="answer8">
+          Al momento la nostra principale stampante, ovvero la bambulab P1S, ha un volume di stampa di 256 x 256 x 256 mm³ però a seconda delle esigenze pezzi più grandi si possono scomporre in componenti più piccoli d'assemblare.
+        </div>
       </div>
+    </div>
   </div>
-</div>
+  </div>
+  </div>
   <!-- Contact -->
   <div class="w3-center w3-padding-64" id="contact">
     <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contatti </span>
     <p>Inviaci una email</p>
   </div>
 
-  <form class="w3-container" action="/action_page.php" target="_blank">
+  <form class="w3-container" action="formmail.php" target="_blank">
+    <input type="hidden" name="redirect" value="http://www.cenacoloenterprise.com">
+    <input type="hidden" name="require" value="e-mail,nome, testo, oggetto">
+    <input name="recipient" type="hidden" value="ocenacolo24@gmail.com">
     <div class="w3-section">
       <label>Nome</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Name" required>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="name" required>
     </div>
     <div class="w3-section">
       <label>Email</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="text" name="Email" required>
+      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" type="email" name="email" required>
     </div>
     <div class="w3-section">
       <label>Oggetto</label>
@@ -413,47 +568,49 @@ h1{
     </div>
     <div class="w3-section">
       <label>Messaggio</label>
-      <input class="w3-input w3-border w3-hover-border-black" style="width:100%;" name="Message" required>
+      <textarea id="testo" name="testo" rows="4" cols="50"></textarea>
     </div>
     <button type="submit" class="w3-button w3-block w3-black">Invio</button>
-    
+
   </form>
 
-<!-- Footer -->
+  <!-- Footer -->
 
-<footer class="w3-container w3-padding-32 w3-light-grey w3-center">
-  <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <p> Seguici anche sui social</p>
-    <a href="https://www.instagram.com/cenacoloenterprise/">
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-    </a>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
+  <footer class="w3-container w3-padding-32 w3-light-grey w3-center">
+    <a href="#" class="w3-button w3-black w3-margin"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+      <p> Seguici anche sui social</p>
+      <a href="https://www.instagram.com/cenacoloenterprise/">
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+      </a>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover-text-green">w3.css</a></p>
+  </footer>
 
-<script>
-$(document).ready(function(){
+  <script>
+    $(document).ready(function () {
       $('.slider').slick({
-          infinite: true,
-          speed: 500,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          autoplay: true, // Attiva l'autoplay
-          autoplaySpeed: 1000 // Imposta la velocità dell'autoplay in millisecondi (es. 2000ms = 2 secondi)
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true, // Attiva l'autoplay
+        autoplaySpeed: 1000 // Imposta la velocità dell'autoplay in millisecondi (es. 2000ms = 2 secondi)
       });
-  });
-</script>
-<script>
-  function toggleAnswer(id) {
-    var answer = document.getElementById("answer" + id);
-    if (answer.style.display === "none") {
-      answer.style.display = "block";
-    } else {
-      answer.style.display = "none";
+    });
+  </script>
+  <script>
+    function toggleAnswer(id) {
+      var answer = document.getElementById("answer" + id);
+      if (answer.style.display === "none") {
+        answer.style.display = "block";
+      } else {
+        answer.style.display = "none";
+      }
     }
-  }
-</script>
+  </script>
 
 </body>
+
 </html>
